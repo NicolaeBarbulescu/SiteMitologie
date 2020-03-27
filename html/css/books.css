@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 23.33%;
+    padding-left: 40px;
+    min-height: 30.33%;
+    padding-top: 15px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h2
+  {
+      color:white;
+      text-decoration: whitesmoke;
+      font-size: 15px;
+  }
+  img
+  {
+      min-height:276px;
+  }
+  .title1
+  {
+
+      padding-left: 62Px;
+  }
+  .title2
+  {
+
+      padding-left: 48Px;
+  }
+  a
+  {
+      text-decoration: none;
+  }

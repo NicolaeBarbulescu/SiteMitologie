@@ -1,0 +1,34 @@
+.odin
+{
+    height: auto;
+    width: 50%;
+    top:auto;
+    left:auto;
+    float :right;
+    position: relative;
+}
+.war
+{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family:"Myriad Pro Cond" ;
+    color: rgb(238, 235, 235);
+}
+.allfather
+{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family:"Myriad Pro Cond" ;
+    color: rgb(238, 235, 235);
+}
+.powers
+{
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-family:"Myriad Pro Cond" ;
+    color: rgb(238, 235, 235); 
+}
+h3
+{
+    color: rgb(238, 235, 235);
+}

@@ -1,0 +1,171 @@
+<html>
+        <head>
+            
+                <link rel="stylesheet" type="text/css" href="css/main.css">
+        </head>
+    <body>
+        <div class = "navbar" id ="baraNavigatie">
+            <a onclick="hide_iframe()"   href="main.html">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn" id ="b1"name ="GODS">
+                    GODS
+                    <i class="fa fa-care-down">
+
+                    </i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/odin.html" target="page" onclick ="show_iframe()">Odin</a>
+                    <a href="html/thor.html"  target="page" onclick ="show_iframe()">Thor</a>
+                    <a href="html/loki.html" target="page" onclick ="show_iframe()">Loki</a>
+                    <a href="#">Frigg</a>
+                    <a href="#">Tyr</a>
+                    <a href="#">Heimdall</a>
+                    <a href="#">Baldur</a>
+                    <a href="#">Bragi</a>
+                    <a href="#">Idun</a>
+                    <a href="#">Njord</a>
+                    <a href="#">Freya</a>
+                    <a href="#">Freyr</a>
+                    <a href="#">Forseti</a>
+                    <a href="#">Ymir</a>
+                    <a href="#">Mimir</a>
+                    
+                </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="b2" name ="GODS">
+                REALMS
+                <i class="fa fa-care-down">
+
+                </i>
+            </button>
+            <div class="dropdown-content">
+                <a href="html/asgard.html" target="page" onclick ="show_iframe()">Asgard</a>
+                <a href="html/alfheim.html" target="page" onclick ="show_iframe()">Alfheim</a>
+                <a href="#">Midgard</a>
+                <a href="#">Muspellheim</a>
+                <a href="#">Vanaheim</a>
+                <a href="#">Nidvellir</a>
+                <a href="#">Jotunheim</a>
+                <a href="#">Nifleim</a>
+                <a href="#">Helhim</a>
+                
+            </div>
+        </div>
+        <a href="html/books.html" target="page" onclick ="show_iframe()">BOOKS </a>
+    <button class="log" onclick="openForm2()">LOG IN</button>
+    <button class="sign" onclick="openForm()">SING UP</button>
+        </div>
+
+
+
+        <div class = "split_b" name = "box" id = "bot">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                </a>
+
+        </div>
+        <div class="split2" name="secondbox" id ="secondBot">
+            <iframe class="pagina" id ="frame" name ="page" >
+                    </iframe>
+            <div class="formular" id="sign up">
+                <form class="form1" action="sign_up.php" method="post">
+                    <h2>
+                        SIGN UP
+                    </h2>
+                    <label for="First name">First name</label>
+                    <input type="text" placeholder="Enter First name" name="First_name" required>
+
+                    <label for="Second name">Second name</label>
+                    <input type="text" placeholder="Enter Second name" name="Second_name" required>
+
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" placeholder="Enter E-mail" name="E_mail" required>
+
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="Password" required>
+
+                    <button type="submit" class="btn">Sign up</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+
+            </div>
+
+            <div class="formular2" id="log in">
+                <form class="form1" action="log_in.php" method="post">
+                    <h1>
+                        LOG IN
+                    </h1>
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" placeholder="Enter E-mail" name="E_mail" required>
+
+                    <label for="Password">Password</label>
+                    <input type="password" placeholder="Enter Password" name="Password" required>
+
+                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn cancel" onclick="closeForm2()">Close</button>
+                </form>
+
+            </div>
+
+            
+        </div>
+
+<script>
+function openForm2()
+{
+    document.getElementById("log in").style.display = "block";
+    document.getElementById("sign up").style.display = "none";
+
+
+}
+function closeForm2()
+{
+    document.getElementById("log in").style.display = "none";
+}
+
+function openForm() {
+  document.getElementById("sign up").style.display = "block";
+  document.getElementById("log in").style.display = "none";
+}
+
+function closeForm() {
+  document.getElementById("sign up").style.display = "none";
+}
+
+
+function myFunction() {
+  var x = document.getElementById("baraNavigatie");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+function show_iframe()
+{
+    var y = document.getElementById("bot");
+    y.style.display = "none";
+    var z = document.getElementById("secondBot");
+    z.style.display = "block";
+    var i = document.getElementById("frame");
+    i.style.display = "block";
+    //window.open('https://youtu.be/dQw4w9WgXcQ?t=43');
+
+
+
+
+}
+function hide_iframe()
+{
+    var z = document.getElementById("secondBot");
+    z.style.display = "none";
+    var y = document.getElementById("bot");
+    y.style.display = "block";
+    var i = document.getElementById("frame");
+    i.style.display = "none";
+}
+</script>
+
+    </body>
+</html>

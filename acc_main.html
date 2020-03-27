@@ -1,0 +1,112 @@
+<html>
+        <head>
+            
+                <link rel="stylesheet" type="text/css" href="css/main.css">
+        </head>
+    <body>
+        <div class = "navbar" id ="baraNavigatie">
+            <a onclick="hide_iframe()"   href="acc_main.html">HOME</a>
+            <div class="dropdown">
+                <button class="dropbtn" id ="b1"name ="GODS">
+                    GODS
+                    <i class="fa fa-care-down">
+
+                    </i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/odin.html" target="page" onclick ="show_iframe()">Odin</a>
+                    <a href="#">Thor</a>
+                    <a href="#">Loki</a>
+                    <a href="#">Frigg</a>
+                    <a href="#">Tyr</a>
+                    <a href="#">Heimdall</a>
+                    <a href="#">Baldur</a>
+                    <a href="#">Bragi</a>
+                    <a href="#">Idun</a>
+                    <a href="#">Njord</a>
+                    <a href="#">Freya</a>
+                    <a href="#">Freyr</a>
+                    <a href="#">Forseti</a>
+                    <a href="#">Ymir</a>
+                    <a href="#">Mimir</a>
+                    
+                </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" id="b2" name ="GODS">
+                REALMS
+                <i class="fa fa-care-down">
+
+                </i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Asgard</a>
+                <a href="#">Alfheim</a>
+                <a href="#">Midgard</a>
+                <a href="#">Muspellheim</a>
+                <a href="#">Vanaheim</a>
+                <a href="#">Nidvellir</a>
+                <a href="#">Jotunheim</a>
+                <a href="#">Nifleim</a>
+                <a href="#">Helhim</a>
+                
+            </div>
+        </div>
+        <a href="html/acc_books.html" target="page" onclick ="show_iframe()">BOOKS </a>
+        
+        <a  class ="out" onclick="hide_iframe()"   href="main.html">
+            SIGN OUT
+        </a>
+        </div>
+
+
+
+        <div class = "split_b" name = "box" id = "bot">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                </a>
+
+        </div>
+        <div class="split2" name="secondbox" id ="secondBot">
+            <iframe class="pagina" id ="frame" name ="page" >
+                    </iframe>
+                    </div>
+                    
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("baraNavigatie");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+function show_iframe()
+{
+    var y = document.getElementById("bot");
+    y.style.display = "none";
+    var z = document.getElementById("secondBot");
+    z.style.display = "block";
+    var i = document.getElementById("frame");
+    i.style.display = "block";
+    //window.open('https://youtu.be/dQw4w9WgXcQ?t=43');
+
+
+
+
+}
+function hide_iframe()
+{
+    var z = document.getElementById("secondBot");
+    z.style.display = "none";
+    var y = document.getElementById("bot");
+    y.style.display = "block";
+    var i = document.getElementById("frame");
+    i.style.display = "none";
+}
+</script>
+
+    </body>
+</html>
